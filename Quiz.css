@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.1s linear; /* transição suave padrão */
+  font-family: "Montserrat", sans-serif; /* fonte principal */
+}
+
+body {
+  background-color: #04182b;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+
+header {
+  background-color: rgb(14, 14, 138);
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 1px solid #000;
+  z-index: 99;
+}
+
+header p {
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 1200px;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.principal {
+  text-align: center;
+  margin-top: 25px;
+}
+
+section p {
+  font-size: 17.5px;
+  line-height: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+input[type="radio"],
+[type="checkbox"] {
+  accent-color: #0f0;
+}
+
+label.label {
+  color: rgba(2, 255, 2, 0.745);
+}
+
+input[type="text"],
+[type="password"],
+[type="date"],
+[type="file"],
+[type="email"] {
+  border: 2px solid blue;
+  padding: 4px;
+}
+
+.class {
+  color: #0f0;
+}
+
+figure img {
+  width: 120px;
+  height: 120px;
+  background-color: blue;
+  border: 2px solid blue;
+  border-radius: 50%;
+}
+
+figcaption {
+  color: #0f0;
+  font-size: 12px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 650px;
+}
+
+caption {
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: rgb(5, 80, 5);
+  color: #fff;
+  padding: 12px;
+  margin: 5px 0 10px 10px;
+  border-radius: 35px;
+  width: 140px;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.responsividade {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table thead {
+  background-color: rgb(6, 61, 6);
+  color: #fff;
+  font-size: 17.5px;
+  font-weight: 60px;
+}
+
+table th,
+td {
+  border: 1px solid #fff;
+  padding: 8px;
+}
+
+tfoot {
+  background-color: rgba(211, 211, 211, 0.228);
+  text-align: center;
+  color: #000;
+  font-weight: 60px;
+}
+
+details li {
+  padding: 5px;
+  color: #0f0;
+}
+
+form textarea {
+  border: 2px solid rgb(21, 0, 255);
+}
+
+fieldset {
+  border: 1px solid rgba(0, 255, 0, 0.219);
+  width: 400px;
+  text-align: center;
+}
+
+footer {
+  margin: 10px 0;
+  padding: 16px;
+  font-size: 14px;
+}

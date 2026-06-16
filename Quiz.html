@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Quiz.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Quiz interativo para programadores</h1>
+      <p class="pheader">
+        Teste seus conhecimentos em programação e veja qual pontuação você
+        consegue fazer!
+      </p>
+    </header>
+    <main>
+      <!-- Secção de introdução ao quiz. -->
+      <section>
+        <h2 class="principal">Sobre este quiz</h2>
+        <p>
+          <strong>Este quiz</strong> foi desenvolvido para testar seus
+          conhecimentos em programação, como linguagem de programação, conceitos
+          básicos e mais. <br />
+
+          Você encontrará diferentes tipos de perguntas, incluindo múltipla
+          escolha, texto e perguntas de data! <br />
+
+          Você poderá encontrar alguns acrônimos como
+          <abbr title="HyperText Markup Language">HTML</abbr> e
+          <abbr title="Cascading Style Sheet">CSS</abbr>, que são comumente
+          usados em questões relacionadas ao desenvolvimento web. <br />
+          Desafie-se com este quiz.
+        </p>
+      </section>
+      <form action="#" method="get" target="_blank">
+        <!-- Secção para pergunta 1: múltipla escolha. -->
+        <section>
+          <h2>
+            Pergunta 1: Qual linguagem é usada para estruturar páginas web?
+          </h2>
+          <div class="form">
+            <input type="radio" id="pyton" name="pergunta1" value="pyton" />
+            <label for="pyton" class="label">Pyton</label><br />
+            <input type="radio" id="html" name="pergunta1" value="html" />
+            <label for="html" class="label">HTML</label><br />
+            <input type="radio" id="Java" name="pergunta1" value="Java" />
+            <label for="Java" class="label">Javascript</label><br />
+            <input type="radio" id="Ruby" name="pergunta1" value="Ruby" />
+            <label for="Ruby" class="label">Ruby</label><br />
+          </div>
+        </section>
+        <!-- Secção para pegunta 2: digitar uma resposta. -->
+        <section>
+          <h2>
+            Pergunta 2: Na URL https://www.google.com o trecho "google.com" é
+            o____
+          </h2>
+          <div>
+            <input
+              type="text"
+              name="pergunta2"
+              placeholder="Digite sua resposta..."
+            />
+          </div>
+        </section>
+        <!-- Secção para pergunta 3: dar um exemplo de senha forte. -->
+        <section>
+          <h2>Pergunta 3: Escreva um exemplo de senha forte:</h2>
+          <div>
+            <input
+              type="password"
+              name="pergunta3"
+              placeholder="Digite uma senha forte..."
+            />
+          </div>
+        </section>
+        <!-- Secção para pergunta 4: escolhendo uma data. -->
+        <section>
+          <h2>Pergunta 4: Em que ano HTML lançou sua primeira versão?</h2>
+          <div>
+            <input type="date" name="pergunta1" value="2026-06-14" />
+          </div>
+        </section>
+        <!-- Secção para pergunta 5: múltipla escolha com uma só seleção. -->
+        <section>
+          <h2>
+            Pergunta 5: Quais dessas tecnologias são consideradas linguagem de
+            programação?
+          </h2>
+          <div class="form">
+            <input type="checkbox" id="css" name="pergunta5" value="css" />
+            <label for="css" class="label">CSS</label> <br />
+
+            <input type="checkbox" id="java" name="pergunta5" value="java" />
+            <label for="java" class="label">Java</label> <br />
+
+            <input type="checkbox" id="html" name="pergunta5" value="html" />
+            <label for="html" class="label">HTML</label> <br />
+
+            <input type="checkbox" id="Java" name="pergunta5" value="Java" />
+            <label for="Java" class="label">Javascript</label>
+          </div>
+        </section>
+        <!-- Secção para pergunta 6: upload de arquivo HTML. -->
+        <section>
+          <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML</h2>
+          <div>
+            <input type="file" name="pergunta 6" accept=".html" /><br />
+          </div>
+        </section>
+        <!-- Secção para pergunta 7: seu tipo de atributo input. -->
+        <section>
+          <h2>
+            Pergunta 7: Selecione o atributo do input que define o seu tipo:
+          </h2>
+          <div>
+            <select name="select" id="select">
+              <option value="id">id</option>
+              <option value="type">type</option>
+              <option value="file">file</option>
+              <option value="date">date</option>
+              <option value="time">time</option>
+              <option value="email">email</option>
+              <option value="number">number</option>
+              <option value="color">color</option>
+              <option value="datetime">datetime</option>
+              <option value="button">button</option>
+            </select>
+          </div>
+        </section>
+        <!-- Secção para pergunta 8: logotipo e seu respectivo site -->
+        <section>
+          <h2>
+            Pergunta 8: Qual aplicação web é representada pelo logotipo abaixo?
+          </h2>
+          <figure>
+            <img src="telegram.svg" alt="logotipo da aplicação web" />
+            <figcaption>Figura 1: logotipo de uma aplicação web.</figcaption>
+          </figure>
+          <div>
+            <input
+              type="text"
+              name="pergunta8"
+              placeholder="Digite sua resposta..."
+            />
+          </div>
+          <p>
+            <button type="reset">Excluir</button>
+            <button type="submit">Eviar</button>
+          </p>
+        </section>
+      </form>
+      <!-- secção para tabela de pontuação. -->
+      <section>
+        <h2>Tabela de pontuação</h2>
+        <div class="responsividade">
+          <table>
+            <caption>
+              Tabela de qualificação às respostas
+            </caption>
+            <thead>
+              <tr>
+                <th>Pontuação</th>
+                <th>Avaliação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0-2</td>
+                <td>
+                  Não desista! Cada iniciativa é uma oportunidade de você
+                  aprender.
+                </td>
+              </tr>
+              <tr>
+                <td>3-4</td>
+                <td>
+                  Você ainda precisa melhorar. Que tal estudar mais sobre
+                  programação?
+                </td>
+              </tr>
+              <tr>
+                <td>5-7</td>
+                <td>Bom! Seu conhecimento em programação está satisfatório</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>
+                  Perfeito! Você está muito bem informado sobre programação.
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">
+                  Boa sorte na próxima! Estude mais para melhorar.
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+      <!-- Secção para observação das respostas corretas. -->
+      <section>
+        <h2>Verifique suas respostas</h2>
+        <details>
+          <ol>
+            <li>HTML</li>
+            <li>Domínio</li>
+            <li>Ab23!kao8Anmd#</li>
+            <li>1991</li>
+            <li>Javascript, Java</li>
+            <li>Arquivo deve ter extensão .html</li>
+            <li>Opcional</li>
+            <li>telegram</li>
+          </ol>
+        </details>
+      </section>
+      <!-- Secção para o feed back. -->
+      <section>
+        <h2>Nos dê o seu feedback</h2>
+        <fieldset>
+          <legend>Informações de contato</legend>
+          <form action="#" method="get" target="_blank" autocomplete="off">
+            <div>
+              <label for="nome" class="class">Nome:</label> <br />
+              <input
+                type="text"
+                name="name"
+                id="nome"
+                placeholder="Digite seu nome"
+              />
+              <br />
+
+              <label for="email" class="class">Email:</label> <br />
+              <input
+                type="email"
+                name="name"
+                id="email"
+                placeholder="ex: vf@gmai.com"
+              />
+              <br />
+
+              <label for="coment" class="class">Comentário:</label> <br />
+              <textarea
+                name="nome"
+                id="coment"
+                rows="2"
+                cols="28"
+                placeholder="Digite seu Comentário"
+              ></textarea>
+            </div>
+            <p>
+              <button type="submit">Evie seu feedback</button>
+            </p>
+          </form>
+        </fieldset>
+      </section>
+    </main>
+    <footer>
+      Obs: Este quiz é uma réplica do quiz original <br />da amada programadora
+      <strong>Rafaella Ballerini</strong> <br />que eu muito estimo a partir de
+      Angola. <br />Um abraço caloroso!
+      <br />
+      <br />
+      <p>
+        Para ter acesso ao vídeo aula
+        <a
+          href="https://youtu.be/AB35iSr1YyA?si=cPCT7AOktf_M7voy"
+          class="class"
+          target="_blank"
+          >clique aqui</a
+        >
+      </p>
+      <br />
+      <p>Feito por: Vicente Francisco Augusto</p>
+      <br />
+      <p>&copy; Quiz de programadores. Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>
